@@ -1,0 +1,101 @@
+.service {
+    display: flex;
+    background-color: #efeeee;
+    @include phones {
+        flex-direction: column;
+    }
+
+}
+.serv-slider {
+    width: 50%;
+    position: relative;
+    @include phones {
+        width: 100%;
+    }
+    &__item {
+        & img {
+            max-height: rem(500px);
+            @include tablets {
+                max-height: rem(530px);
+            }
+            @include phones {
+                max-height: rem(350px);
+            }
+        }
+    }
+    & .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 5%;
+        left: 42%;
+        z-index: 1100;
+        
+        & li {
+            margin: 0 rem(7px);
+            cursor: pointer;
+            display: inline-block;
+            &.slick-active button {
+                opacity: 100%;
+                border: none;
+                
+            }
+        }
+        & button {
+            font-size: 0;
+            height: rem(12px);
+            width: rem(12px);
+            border-radius: 50%; 
+            background-color: #fff;
+            opacity: 70%;
+            border: none;
+        }
+    }
+}
+
+.serv-content {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        @include phones {
+            margin-bottom: 5%;
+            flex-direction: column;
+        }
+        
+    }
+    &__item {
+        width: 47%;
+        margin-left: 3%;
+        margin-top: 5%;
+        @include tablets {
+            margin-top: 7%;
+            width: 45%;
+        }
+        @include phones {
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+}
+.serv-img {
+    text-align: center;
+    margin-bottom: 2%;
+    & img {
+        width: 10%;
+        @include phones {
+            width: 7%;
+        }
+    }
+}
+.serv-desc {
+    font-size: rem(14px);
+    color: #959595;
+    @include tablets {
+        font-size: rem(13px);
+    }
+    @include phones {
+        text-align: center;
+        font-size: rem(15px);
+    }
+}

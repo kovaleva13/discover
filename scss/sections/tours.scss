@@ -1,0 +1,51 @@
+.tours-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    margin-top: 3%;
+    @include tablets {
+        margin-left: 10%;
+        margin-right: 9%;
+        justify-content: space-evenly;
+    }
+    &__item {
+        margin-left: 2.5%;
+        margin-bottom: 3%;
+        @include tablets {
+            margin-left: 0;
+        }
+    }
+}
+.tours-img {
+    width: 95%;
+    transition: 0.7s;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.tours-btn {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    @include phones {
+        margin-bottom: 10%;
+    }
+}
+.tours-link {
+    font-size: rem(18px);
+    font-weight: 600;
+    color: #fff;
+    background-color: #59c45a;
+    text-decoration: none;
+    padding: rem(13px) rem(25px);
+    border-radius: rem(8px);
+    @include tablets {
+        font-size: rem(14px);
+        padding: rem(12px) rem(20px);
+    }
+    @include phones {
+        font-size: rem(12px);
+        padding: rem(12px) rem(14px);
+    }
+}

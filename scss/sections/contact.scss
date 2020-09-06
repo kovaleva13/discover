@@ -1,0 +1,151 @@
+.contact {
+    background-color: #efeeee;
+}   
+
+.footer-title {
+    color: #959595;
+    margin-left: 4%;
+    @include tablets {
+        margin-left: 0;
+    }
+}
+
+.footer {
+    &__content {
+        display: flex;
+        margin-top: 5%;
+        @include phones {
+            flex-direction: column;
+        }
+  }
+    
+}
+.info {
+    width: 44%;
+    margin-left: 6%;
+    @include phones {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+    }
+}
+
+.form {
+    width: 44%;
+    margin-right: 6%;
+    @include phones {
+        order: -1;
+        width: 80%;
+         margin-left: 10%;
+         margin-bottom: 20%;
+    }
+
+    &__input {
+        width: 100%;
+        background-color: #efeeee;
+        min-height: rem(60px);
+        border: 1px solid transparent;
+        border-bottom: rem(1px) solid #c9c9c9;
+        padding-top: 6%;
+        font-size: rem(14px);
+        color: #959595;
+        &:focus {
+            border: none;
+            border-bottom: rem(1px) solid #c9c9c9;
+            outline: none;
+        }
+        &.comment {
+            min-height: rem(100px);
+            padding-top: 11%;
+        }
+    }
+    &__btn {
+        margin-top: 10%;
+        margin-left: 40%;
+        @include phones {
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.info-logo {
+    margin-bottom: 4%;
+    margin-top: -5%;
+}
+
+.info-link {
+    & img {
+        width: 25%;
+        @include phones {
+            width: 35%;
+        }
+    }
+}
+
+.info-desc {
+    margin-bottom: 3%;
+    font-size: rem(14px);
+    color: #959595;
+    max-width: 85%;
+    @include phones {
+        font-size: rem(15px);
+        max-width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+}
+.adress {
+    margin-bottom: 9%;
+    &__item {
+        display: flex;
+        margin-bottom: 2%;
+    }
+    &__img {
+        margin-right: 3%;
+        @include phones {
+            margin-left: 15%;
+        }
+    }
+}
+.desc-contact {
+    font-size: rem(14px);
+    font-weight: 700;
+    color: #9b9b9b;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    margin-bottom: 10%;
+    @include phones {
+        justify-content: center;
+    }
+    &__link {
+        & img {
+            width: 70%;
+        }
+    }
+}
+
+.btn {
+    font-size: rem(18px);
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #59c45a;
+    border: 1px solid transparent;
+    padding: rem(15px) rem(55px) rem(15px) rem(25px);
+    border-radius: rem(8px);
+    cursor: pointer;
+    background-image: url('../img/footer/mail.png');
+    background-repeat: no-repeat;
+    background-position: rem(85px) center;
+    @include tablets {
+        font-size: rem(14px);
+        padding: rem(15px) rem(55px) rem(15px) rem(15px);
+        background-position: rem(70px) center;
+    }
+    
+}

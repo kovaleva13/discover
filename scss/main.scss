@@ -1,0 +1,17 @@
+@import "config/normalize";
+
+$desktop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+
+@import "config/mixins";
+@import "layout/fonts";
+@import "layout/base";
+@import "layout/adjustment";
+
+@import "sections/header";
+@import "sections/slider";
+@import "sections/favorable";
+@import "sections/service";
+@import "sections/tours";
+@import "sections/contact";
